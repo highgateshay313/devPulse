@@ -95,5 +95,11 @@
     font-size: 17px;
 }
 
+@media (max-width: 600px) {
+    .avatar {
+        width: 150px;
+    }
+}
+
 
 
