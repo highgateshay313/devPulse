@@ -85,6 +85,6 @@
         'languages'
         'repos'
         ;
-       
+       overflow: hidden;
     }
 }
