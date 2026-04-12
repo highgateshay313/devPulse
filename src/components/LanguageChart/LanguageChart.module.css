@@ -1,0 +1,34 @@
+
+.container {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    background-color: var(--color-tile);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.titleDiv {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.titleh3 {
+    z-index: 10;
+} 
+
+.title {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 70%;
+}
+
+.graph {
+    width: 20%;
+}

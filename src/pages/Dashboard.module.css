@@ -1,0 +1,67 @@
+
+.page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(90deg, var(--color-accent-2), rgba(255, 255, 255, 0.4));
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+    padding: var(--space-4);
+}
+
+
+
+.logo {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-accent-2);
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.grid {
+    display: grid;
+    background-color: rgb(30, 29, 29);
+    color: white;
+    grid-template-columns: 520px 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+        'profile  activity'
+        'info     languages'
+        'repos    repos';
+    padding: var(--space-6) var(--space-8);
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: var(--space-6);
+    width: 100%;
+}
+
+.profile { 
+    grid-area: profile;
+    width: 100%;
+}
+.activity { grid-area: activity; }
+.languages { grid-area: languages; }
+.repos { grid-area: repos; }
+
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'profile '
+            'activity '
+            'languages '
+            'repos ';
+    }
+}

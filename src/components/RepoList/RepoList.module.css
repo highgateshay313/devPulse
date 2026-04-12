@@ -1,0 +1,17 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.select {
+    background-color: var(--color-accent);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 18px;
+}

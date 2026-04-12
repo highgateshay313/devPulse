@@ -1,0 +1,99 @@
+
+.card {
+    display: flex;
+    background-color: var(--color-tile);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.avatar {
+    width: 50%;
+    height: 90%;
+    border-radius: 10%;
+    margin-left: 5px;
+    margin-top: 3px;
+    object-fit: cover;
+}
+
+.avatarRow {
+  display: flex;
+  align-items: center;
+  
+}
+
+.location {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.name {
+    display: inline;
+    font-size: 1.2rem;
+   margin-left: 15px;
+}
+
+.nameGroup {
+    padding-top: 10px;
+}
+
+.bottomRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-tile);
+    border-radius: 15px;
+}
+
+.login {
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+}
+
+.bio {
+   padding-top: 10px;
+   margin-left: 10px;
+   margin-right: 5px;
+   color: var(--color-accent-2);
+}
+
+.bioTitle {
+    color: white;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-tile);
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+
+.project {
+    width: 100px;
+    height: 100px;
+}
+
+.pillValue {
+    padding-right: 8px;
+    color: var(--color-accent-2);
+    font-size: 17px;
+}
+
+.pillLabel {
+    font-size: 17px;
+}
+
+
+
