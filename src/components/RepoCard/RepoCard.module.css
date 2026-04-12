@@ -14,3 +14,11 @@
     color: var(--color-accent-2);
 }
 
+@media (max-width: 600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+

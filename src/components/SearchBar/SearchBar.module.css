@@ -3,8 +3,10 @@
     display: flex;
     padding: 20px;
     margin: 0;
-    width: 30%;
-    justify-content: end;
+    flex: 1;
+    max-width: 600px;
+    justify-content: flex-end;
+    
 }
 
 .input {
@@ -22,5 +24,17 @@
     border-radius: 10px;
     background-color: blueviolet;
     color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .form {
+        display: flexs;
+        width: 40%; 
+        padding: 0;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 

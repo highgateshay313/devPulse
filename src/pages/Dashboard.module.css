@@ -6,8 +6,8 @@
 }
 
 .header {
-    position: sticky;
     top: 0;
+    max-width: 1600px;
     width: 100%;
     z-index: 10;
     background: linear-gradient(90deg, var(--color-accent-2), rgba(255, 255, 255, 0.4));
@@ -15,9 +15,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
     gap: var(--space-6);
     padding: var(--space-4);
 }
+
+
 
 
 
@@ -27,6 +30,7 @@
     color: var(--color-accent-2);
     white-space: nowrap;
     padding-left: 20px;
+    color: white;
 }
 
 .grid {
@@ -55,7 +59,7 @@
 .repos { grid-area: repos; }
 
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -63,5 +67,24 @@
             'activity '
             'languages '
             'repos ';
+    }
+} */
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-4);
+        padding: var(--space-4)
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'profile'
+        'activity'
+        'languages'
+        'repos'
+        ;
+       
     }
 }
