@@ -30,7 +30,7 @@
     color: var(--color-accent-2);
     white-space: nowrap;
     padding-left: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .grid {
@@ -81,6 +81,7 @@
         grid-template-columns: 1fr;
         grid-template-areas:
         'profile'
+        'info'
         'activity'
         'languages'
         'repos'
