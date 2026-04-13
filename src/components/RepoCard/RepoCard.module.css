@@ -25,14 +25,10 @@
 .desc {
     font-size: 16px;
     line-height: 1.4;
-    flex: 1;
     margin-bottom: 10px;
 }
 
 .meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin-top: auto;
 }
 
