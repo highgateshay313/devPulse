@@ -18,8 +18,6 @@
 
 @media (max-width: 600px) {
     .grid {
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
+        grid-template-columns: 1fr;
     }
 }

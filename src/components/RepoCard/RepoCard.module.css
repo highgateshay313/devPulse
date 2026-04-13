@@ -1,6 +1,8 @@
 
 .card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
     background-color: var(--color-tile);
     border-radius: 10px;
     padding: 14px;
@@ -14,11 +16,32 @@
     color: var(--color-accent-2);
 }
 
+.name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 1.4;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
 @media (max-width: 600px) {
     .card {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        width: 100%;
     }
 }
 
